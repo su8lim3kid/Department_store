@@ -1,0 +1,8 @@
+<h1>Click Link To View Department Stores </h1>
+<%= link_to 'view department stores', new_department_path %>
+<ul>
+  <% @departments.each do |department| %>
+
+    <li><%= link_to department.name, department %></li>
+  <% end %>
+</ul>
